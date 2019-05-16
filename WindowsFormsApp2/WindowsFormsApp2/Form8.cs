@@ -30,61 +30,79 @@ namespace WindowsFormsApp2
         private void mnuFileNew_Click(object sender, EventArgs e)
         {
             listBox1.Items.Add(((ToolStripMenuItem)sender).Text);
+            MessageBox.Show(((ToolStripMenuItem)sender).Text);
         }
 
         private void mnuFileOpen_Click(object sender, EventArgs e)
         {
             listBox1.Items.Add(((ToolStripMenuItem)sender).Text);
+            MessageBox.Show(((ToolStripMenuItem)sender).Text);
         }
 
         private void mnuFileClose_Click(object sender, EventArgs e)
         {
             listBox1.Items.Add(((ToolStripMenuItem)sender).Text);
+            MessageBox.Show(((ToolStripMenuItem)sender).Text);
         }
 
         private void mnuFileSave_Click(object sender, EventArgs e)
         {
             listBox1.Items.Add(((ToolStripMenuItem)sender).Text);
+            MessageBox.Show(((ToolStripMenuItem)sender).Text);
         }
 
         private void mnuFileExSave_Click(object sender, EventArgs e)
         {
             listBox1.Items.Add(((ToolStripMenuItem)sender).Text);
+            MessageBox.Show(((ToolStripMenuItem)sender).Text);
         }
 
         private void mnuFilePrint_Click(object sender, EventArgs e)
         {
             listBox1.Items.Add(((ToolStripMenuItem)sender).Text);
+            MessageBox.Show(((ToolStripMenuItem)sender).Text);
         }
 
         private void mnuFileView_Click(object sender, EventArgs e)
         {
             listBox1.Items.Add(((ToolStripMenuItem)sender).Text);
+            MessageBox.Show(((ToolStripMenuItem)sender).Text);
         }
 
         private void mnuFileExit_Click(object sender, EventArgs e)
         {
             listBox1.Items.Add(((ToolStripMenuItem)sender).Text);
+            MessageBox.Show(((ToolStripMenuItem)sender).Text);
         }
 
         private void mnuEditCut_Click(object sender, EventArgs e)
         {
             listBox1.Items.Add(((ToolStripMenuItem)sender).Text);
+            MessageBox.Show(((ToolStripMenuItem)sender).Text);
         }
 
         private void mnuEditCopy_Click(object sender, EventArgs e)
         {
             listBox1.Items.Add(((ToolStripMenuItem)sender).Text);
+            MessageBox.Show(((ToolStripMenuItem)sender).Text);
         }
 
         private void mnuEditPaste_Click(object sender, EventArgs e)
         {
             listBox1.Items.Add(((ToolStripMenuItem)sender).Text);
+            MessageBox.Show(((ToolStripMenuItem)sender).Text);
         }
 
         private void mnuHelpInfo_Click(object sender, EventArgs e)
         {
             listBox1.Items.Add(((ToolStripMenuItem)sender).Text);
+            MessageBox.Show(((ToolStripMenuItem)sender).Text);
         }
+
+        private void mFile_Click(object sender, EventArgs e)
+        {
+            
+        }
+
     }
 }

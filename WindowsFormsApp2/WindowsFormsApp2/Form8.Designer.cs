@@ -35,16 +35,16 @@
             this.mnuFileClose = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFileSave = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFileExSave = new System.Windows.Forms.ToolStripMenuItem();
-            this.mEdit = new System.Windows.Forms.ToolStripMenuItem();
-            this.mHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuFilePrint = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFileView = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuFileExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.mEdit = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuEditCut = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuEditCopy = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuEditPaste = new System.Windows.Forms.ToolStripMenuItem();
+            this.mHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHelpInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -80,6 +80,7 @@
             this.mFile.Name = "mFile";
             this.mFile.Size = new System.Drawing.Size(57, 20);
             this.mFile.Text = "파일(&F)";
+            this.mFile.Click += new System.EventHandler(this.mFile_Click);
             // 
             // mnuFileNew
             // 
@@ -119,24 +120,6 @@
             this.mnuFileExSave.Text = "다른 이름으로 저장(&A)";
             this.mnuFileExSave.Click += new System.EventHandler(this.mnuFileExSave_Click);
             // 
-            // mEdit
-            // 
-            this.mEdit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuEditCut,
-            this.mnuEditCopy,
-            this.mnuEditPaste});
-            this.mEdit.Name = "mEdit";
-            this.mEdit.Size = new System.Drawing.Size(57, 20);
-            this.mEdit.Text = "편집(&E)";
-            // 
-            // mHelp
-            // 
-            this.mHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuHelpInfo});
-            this.mHelp.Name = "mHelp";
-            this.mHelp.Size = new System.Drawing.Size(72, 20);
-            this.mHelp.Text = "도움말(&H)";
-            // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
@@ -169,11 +152,21 @@
             this.mnuFileExit.Text = "종료(&X)";
             this.mnuFileExit.Click += new System.EventHandler(this.mnuFileExit_Click);
             // 
+            // mEdit
+            // 
+            this.mEdit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuEditCut,
+            this.mnuEditCopy,
+            this.mnuEditPaste});
+            this.mEdit.Name = "mEdit";
+            this.mEdit.Size = new System.Drawing.Size(57, 20);
+            this.mEdit.Text = "편집(&E)";
+            // 
             // mnuEditCut
             // 
             this.mnuEditCut.Name = "mnuEditCut";
             this.mnuEditCut.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.mnuEditCut.Size = new System.Drawing.Size(180, 22);
+            this.mnuEditCut.Size = new System.Drawing.Size(179, 22);
             this.mnuEditCut.Text = "잘라내기(&T)";
             this.mnuEditCut.Click += new System.EventHandler(this.mnuEditCut_Click);
             // 
@@ -181,7 +174,7 @@
             // 
             this.mnuEditCopy.Name = "mnuEditCopy";
             this.mnuEditCopy.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.mnuEditCopy.Size = new System.Drawing.Size(180, 22);
+            this.mnuEditCopy.Size = new System.Drawing.Size(179, 22);
             this.mnuEditCopy.Text = "복사(&C)";
             this.mnuEditCopy.Click += new System.EventHandler(this.mnuEditCopy_Click);
             // 
@@ -189,14 +182,22 @@
             // 
             this.mnuEditPaste.Name = "mnuEditPaste";
             this.mnuEditPaste.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.mnuEditPaste.Size = new System.Drawing.Size(180, 22);
+            this.mnuEditPaste.Size = new System.Drawing.Size(179, 22);
             this.mnuEditPaste.Text = "붙여넣기(&P)";
             this.mnuEditPaste.Click += new System.EventHandler(this.mnuEditPaste_Click);
+            // 
+            // mHelp
+            // 
+            this.mHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuHelpInfo});
+            this.mHelp.Name = "mHelp";
+            this.mHelp.Size = new System.Drawing.Size(72, 20);
+            this.mHelp.Text = "도움말(&H)";
             // 
             // mnuHelpInfo
             // 
             this.mnuHelpInfo.Name = "mnuHelpInfo";
-            this.mnuHelpInfo.Size = new System.Drawing.Size(180, 22);
+            this.mnuHelpInfo.Size = new System.Drawing.Size(166, 22);
             this.mnuHelpInfo.Text = "프로그램 정보(&A)";
             this.mnuHelpInfo.Click += new System.EventHandler(this.mnuHelpInfo_Click);
             // 
