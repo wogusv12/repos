@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace csharp11
+namespace WindowsFormsApp5
 {
     static class Program
     {
@@ -16,13 +16,7 @@ namespace csharp11
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-               Application.Run(new Form8());
-               Application.Run(new Form10());
-               Application.Run(new Form11());
-               Application.Run(new Form12());
-
-
+            Application.Run(new Form1());
         }
     }
 }
